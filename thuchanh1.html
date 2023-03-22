@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let myDate = function (day, month, year) {
+    //     this.day = day;
+    //     this.month=month;
+    //     this.year=year;
+    //     this.getDay  = function () {
+    //         return this.day
+    //     }
+    //     this.getMonth= function ()  {
+    //         return this.month
+    //     }
+    //     this.getYear=function () {
+    //         return this.year
+    //     }
+    //     this.setDay = function (day) {
+    //        return  this.day=day
+    //     }
+    //     this.Month=function (day) {
+    //        return  this.month = month
+    //     }
+    //     this.Year=function (day) {
+    //       return   this.year=year
+    //     }
+    // }
+    // let date = new myDate(29,5,1994)
+    // console.log(date)
+    // let day= date.setDay(30);
+    // let month=date.getMonth();
+    // let year=date.getYear();
+    // alert(`${day} / ${month} / ${year}`)
+
+class myDate {
+    day;
+    month;
+    year;
+    constructor(day,month,year) {
+    this.day=day;
+    this.month=month;
+    this.year=year
+    }
+    getDay(){
+        return this.day
+    }
+    getMonth (){
+        return this.month
+    }
+    getYear(){
+        return this.year
+    }
+    setDay(day){
+        return this.day=day
+    }
+    setMonth(month){
+        return this.month=month
+    }
+    setYear(year){
+        return this.year=year
+    }
+
+}
+let date = new myDate(29,5,1994)
+    console.log(date)
+    // let day=date.getDay()
+    let day=date.setDay(30)
+    console.log(day)
+    let month=date.getMonth()
+    let year=date.getYear()
+    alert(`${day} / ${month} / ${year} `)
+
+</script>
+</body>
+</html>
